@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API Example</title>
+
+    
+    <!--<link rel="stylesheet" href="styles.css">-->
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="script1.js"></script>
+
+    <div id="data-container">
+        <!-- Fetched data will be displayed here -->
+        <h1 style="text-align: center">Book Store</h1>
+        <p id=myid></p>
+        <hr>
+        <input type="text" id="bookid" placeholder="enter bookid">
+        <button id="getbook" onclick="getBook()">Search</button>
+        <button id="btndel">delete</button>
+
+        <!--<button id="getallbooks" onclick="getAllBooks()">getallbooks</button>-->
+        <table id="booksTable">
+            <thead>
+                <tr>
+                    <th>BookId</th>
+                    <th>Book Name</th>
+                    <th>Type of Book</th>
+                    <th>Available</th>
+                </tr>
+            </thead>
+            <tbody id="booksTableBody">
+                <!-- Table rows will be added dynamically here -->
+            </tbody>
+        </table>
+        <hr>
+        <h3><Specific Book Detail<h3>
+        <table id="booksTable">
+            <thead>
+                <tr>
+                    <th>BookId</th>
+                    <th>Book Name</th>
+                    <th>Type of Book</th>
+                    <th>Available</th>
+                    <th>Author</th>
+                    <th>price</th>
+                    <th>stock</th>
+
+
+                </tr>
+            </thead>
+            <tbody id="bookTable">
+                <!-- Table rows will be added dynamically here -->
+            </tbody>
+        </table>
+        <hr>
+        
+           
+        <input type="text" id="bookid1" placeholder="enter bookid">
+        <input type="text" id="name" placeholder="enter name">
+        <button id="order" onclick="placeorders()">Order</button>
+        <button id="getorder" onclick="getAllOrder()">OrderList</button>
+        <hr>
+      
+        <table id="booksTable">
+            <thead>
+                <tr>
+                    <th>orderId</th>
+                    <th>Book Id</th>
+                    <th>Customer Name</th>
+                    <th>Qunatity</th>
+                </tr>
+            </thead>
+            <tbody id="ordersTableBody">
+                <!-- Table rows will be added dynamically here -->
+            </tbody>
+        </table>
+        <hr>
+        <input type="text" id="orderid" placeholder="enter orderid">
+        <input type="text" id="custname" placeholder="enter customerName">
+        <button id="putorder" onclick="updateorders()">Patch</button>
+        <button id="deleteorder" onclick="deleteOrder()">Delete</button>
+
+    </div>
+
+
+</body>
+
+</html>
