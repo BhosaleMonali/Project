@@ -80,43 +80,6 @@ function getBook() {
         });
 }
 
-
-// function getBook() {
-//     const bookId = document.getElementById("bookid").value;
-//     axios.get(`https://simple-books-api.glitch.me/books/${bookId}`)
-//         .then(response => {
-//             if (response.status !== 200) {
-//                 throw new Error('Network response was not ok');
-//             }
-//             const data = response.data;
-//             console.log(data);
-//             const tableBody = document.getElementById('bookTable');
-//             tableBody.innerHTML = '';
-
-//             data.forEach(book => {
-//                 const row = tableBody.insertRow();
-//                 const id = row.insertCell(0);
-//                 const name = row.insertCell(1);
-//                 const type = row.insertCell(2);
-//                 const available = row.insertCell(3);
-//                 const author = row.insertCell(4);
-//                 const price = row.insertCell(5);
-//                 const stock = row.insertCell(6);
-
-//                 id.textContent = book.id;
-//                 name.textContent = book.name;
-//                 type.textContent = book.type;
-//                 available.textContent = book.available;
-//                 author.textContent = book.author;
-//                 price.textContent = book.price;
-//                 stock.textContent = book.current - stock;
-//             });
-//         })
-//         .catch(error => {
-//             console.error('There was a problem with the fetch operation:', error);
-//         });
-// }
-
 function getAllOrder() {
     axios.get('https://simple-books-api.glitch.me/orders', {
         headers: {
@@ -245,3 +208,14 @@ function placeorders() {
                 });
 
         }
+
+        // Function to fetch data for a specific book
+// Function to fetch data for a specific book
+// function getBook(row) {
+//     // Get the book ID from the first cell of the row (assuming it's in the first cell)
+//     var bookId = row.cells[0].innerText; // Adjust index if book ID is in a different cell
+
+//     // Your GET request logic here
+//     console.log("Fetching data for book with ID:", bookId);
+// }
+

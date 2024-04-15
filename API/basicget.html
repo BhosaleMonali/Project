@@ -7,7 +7,7 @@
     <title>Fetch API Example</title>
 
     
-    <!--<link rel="stylesheet" href="styles.css">-->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -17,7 +17,9 @@
 
     <div id="data-container">
         <!-- Fetched data will be displayed here -->
-        <h1 style="text-align: center">Book Store</h1>
+        <h1 style="text-align: center">
+            <img src="data:image/png;base64,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" alt="Bookstore Logo" width="100" height="100"> <!-- Adjust width and height as needed -->
+            Book Store</h1>
         <p id=myid></p>
         <hr>
         <input type="text" id="bookid" placeholder="enter bookid">
@@ -27,16 +29,26 @@
         <!--<button id="getallbooks" onclick="getAllBooks()">getallbooks</button>-->
         <table id="booksTable">
             <thead>
-                <tr>
+                <tr >
                     <th>BookId</th>
                     <th>Book Name</th>
                     <th>Type of Book</th>
                     <th>Available</th>
                 </tr>
             </thead>
-            <tbody id="booksTableBody">
+            <!--<tbody id="booksTableBody" onmouseover="getBook()">
                 <!-- Table rows will be added dynamically here -->
-            </tbody>
+            <!--</tbody>-->
+            <tbody id="booksTableBody">
+    <!-- Table rows will be added dynamically here -->
+    <tr onmouseover="getBook(this)"> <!-- Replace 'bookId' with the actual book ID for each row -->
+        <td>BookId</td>
+        <td>Book Name</td>
+        <td>Type of Book</td>
+        <td>Available</td>
+    </tr>
+</tbody>
+
         </table>
         <hr>
         <h3><Specific Book Detail<h3>
@@ -70,7 +82,7 @@
         <table id="booksTable">
             <thead>
                 <tr>
-                    <th>orderId</th>
+                    <th>OrderId</th>
                     <th>Book Id</th>
                     <th>Customer Name</th>
                     <th>Qunatity</th>
